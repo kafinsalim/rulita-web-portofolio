@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
         <link rel="icon" href="/favicon.png" type="image/x-icon" />
       </Head>
-      <div className={styles.yellowGradient} />
+      {/* <div className={styles.yellowGradient} /> */}
       <nav className={styles.nav}>
         <div>
           <Email className={styles.email} />

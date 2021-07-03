@@ -6,17 +6,6 @@
   overflow-x: hidden;
 }
 
-.yellowGradient {
-  background: #fdf1d6;
-  position: absolute;
-  width: 512px;
-  left: calc(50% - 512px / 2 + 199px);
-  top: -947px;
-  bottom: 423px;
-  filter: blur(170px);
-  z-index: 0;
-}
-
 .nav {
   display: flex;
   width: 100%;
@@ -201,13 +190,6 @@
   }
   .showInMobile {
     display: block !important;
-  }
-  .yellowGradient {
-    /* display: none; */
-    width: 276px;
-    left: calc(50% - 276px / 2 + 56px);
-    bottom: 396px;
-    filter: blur(96px);
   }
   .nav {
     padding: 32px 24px;
