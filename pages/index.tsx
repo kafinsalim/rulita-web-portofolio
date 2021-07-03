@@ -2,10 +2,12 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Email from "../component/svg/Email";
-import Menubar from "../component/svg/Menubar";
+import { useRef } from "react";
 // import Section from "../component/Section";
 
 export default function Home() {
+  const footerRef = useRef<HTMLElement>(null);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -20,15 +22,16 @@ export default function Home() {
       <div className={styles.yellowGradient} />
       <div className={styles.purpleGradient} />
       <nav className={styles.nav}>
-        <div>
+        <div onClick={() => footerRef?.current?.scrollIntoView()}>
           <Email className={styles.email} />
-          <span className={styles.hideInMobile}>hitmeup.rulita@gmail.com</span>
+          <span className={`${styles.hideInMobile} ${styles.hideInTablet}`}>
+            hitmeup.rulita@gmail.com
+          </span>
         </div>
-        <div className={styles.hideInMobile}>
-          <button>Work</button>
+        <div>
+          <button className={styles.hideInMobile}>Work</button>
           <button className={styles.resume}>Resume</button>
         </div>
-        <Menubar className={styles.showInMobile} />
       </nav>
 
       <main className={styles.main}>
@@ -67,7 +70,7 @@ export default function Home() {
         </Section> */}
       </main>
 
-      <footer className={styles.footer}>
+      <footer className={styles.footer} ref={footerRef}>
         <div className={styles.sendmail}>
           <h4>Hit me up!</h4>
           <p>

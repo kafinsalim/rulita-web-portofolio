@@ -12,6 +12,7 @@ body {
     rgba(254, 211, 241, 1) 60%,
     rgba(174, 178, 243, 1) 100%
   );
+  scroll-behavior: smooth;
 }
 
 a {

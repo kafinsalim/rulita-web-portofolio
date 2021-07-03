@@ -44,7 +44,6 @@
   background-color: transparent;
   border: none;
   box-sizing: border-box;
-  margin-right: 24px;
 }
 
 .nav div {
@@ -61,6 +60,7 @@
   border-radius: 24px;
   color: #ffffff;
   padding: 8px 24px;
+  margin-left: 24px;
 }
 
 .main {
@@ -69,7 +69,7 @@
 }
 
 .header {
-  padding: 2rem 0px;
+  padding: 2rem 0px 0px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -205,16 +205,14 @@
   display: block;
 }
 
-.showInMobile {
-  display: none;
+.hideInTablet {
+  display: block;
 }
 
-@media (max-width: 991px) {
+/* Responsive for Mobile */
+@media (max-width: 767px) {
   .hideInMobile {
     display: none !important;
-  }
-  .showInMobile {
-    display: block !important;
   }
   .yellowGradient {
     width: 196px;
@@ -223,11 +221,14 @@
     filter: blur(96px);
   }
   .nav {
-    padding: 32px 24px;
+    padding: 32px 24px 24px;
   }
   .header {
-    padding: 32px;
+    padding: 1rem 32px;
     min-height: calc(100vh - 82px);
+  }
+  .title {
+    font-size: 16px;
   }
   .description {
     width: 290px;
@@ -247,9 +248,72 @@
   .sendmail {
     margin-right: 0px;
   }
+  .sendmail p {
+    font-size: 12px;
+  }
   .connect {
     margin-top: 124px;
     width: 100%;
     text-align: center;
+  }
+  .account {
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 8px;
+  }
+  .account a {
+    font-size: 12px;
+  }
+}
+
+/* Responsive for Tablet */
+@media (min-width: 767px) and (max-width: 991px) {
+  .hideInTablet {
+    display: none !important;
+  }
+  .hideInMobile {
+    display: none !important;
+  }
+  .yellowGradient {
+    width: 196px;
+    left: calc(50% - 196px / 2 + 56px);
+    bottom: 396px;
+    filter: blur(96px);
+  }
+  .nav {
+    padding: 32px 44px;
+  }
+  .header {
+    min-height: calc(100vh - 82px);
+  }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sendmail {
+    margin-right: 0px;
+  }
+  .sendmail p {
+    font-size: 20px;
+  }
+  .connect {
+    margin-top: 124px;
+  }
+}
+
+@media (min-height: 767px) {
+  .header {
+    padding: 5rem 0px;
+  }
+}
+
+@media (min-height: 991px) {
+  .header {
+    padding: 10rem 0px;
+  }
+}
+
+@media (min-height: 1240px) {
+  .header {
+    padding: 20rem 0px;
   }
 }
