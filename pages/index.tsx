@@ -75,7 +75,9 @@ export default function Home() {
             may have. Or maybe you want to just say hello? I’d love to hear from
             you 🌈
           </p>
-          <button>Send Email</button>
+          <a href="mailto:hitmeup.rulita@gmail.com">
+            <button>Send Email</button>
+          </a>
         </div>
         <div className={styles.connect}>
           <p>Connect</p>

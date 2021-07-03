@@ -6,7 +6,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  background: rgb(208, 228, 254);
   background: linear-gradient(
     137deg,
     rgba(208, 228, 254, 1) 0%,
@@ -23,6 +22,7 @@ a {
 button {
   font-family: "Open Sans";
   min-height: 44px;
+  cursor: pointer;
 }
 
 * {
