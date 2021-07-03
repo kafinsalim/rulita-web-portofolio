@@ -116,6 +116,7 @@
 
 .subdescription a {
   color: #5459ab;
+  font-weight: bold;
 }
 
 .main button {
@@ -216,9 +217,8 @@
     display: block !important;
   }
   .yellowGradient {
-    /* display: none; */
-    width: 276px;
-    left: calc(50% - 276px / 2 + 56px);
+    width: 196px;
+    left: calc(50% - 196px / 2 + 56px);
     bottom: 396px;
     filter: blur(96px);
   }
