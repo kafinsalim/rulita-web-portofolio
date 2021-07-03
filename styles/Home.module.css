@@ -56,7 +56,7 @@
 }
 
 .header {
-  padding: 5rem 0;
+  padding: 2rem 0px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -112,7 +112,7 @@
   cursor: pointer;
   padding: 8px;
   position: absolute;
-  bottom: 60px;
+  bottom: 36px;
 }
 
 .arrow {
