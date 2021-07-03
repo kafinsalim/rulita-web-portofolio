@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Email from "../component/svg/Email";
 import Menubar from "../component/svg/Menubar";
-import Section from "../component/Section";
+// import Section from "../component/Section";
 
 export default function Home() {
   return (
@@ -18,6 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" type="image/x-icon" />
       </Head>
       <div className={styles.yellowGradient} />
+      <div className={styles.purpleGradient} />
       <nav className={styles.nav}>
         <div>
           <Email className={styles.email} />
@@ -42,9 +43,8 @@ export default function Home() {
           </p>
           <small className={styles.subdescription}>
             Over {new Date().getFullYear() - 2017} years experience in a fast
-            pace company as a visual designer.
-            <br />
-            Currently working at <a href="https://pintu.co.id">Pintu.</a>
+            pace company as a visual designer. Currently working at{" "}
+            <a href="https://pintu.co.id">Pintu.</a>
           </small>
           <button>
             <Image

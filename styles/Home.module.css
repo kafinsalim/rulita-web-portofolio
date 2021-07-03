@@ -11,9 +11,21 @@
   position: absolute;
   width: 512px;
   left: calc(50% - 512px / 2 + 199px);
-  top: -947px;
+  top: -320px;
   bottom: 423px;
-  filter: blur(170px);
+  filter: blur(196px);
+  z-index: 0;
+}
+
+.purpleGradient {
+  width: 632px;
+  background: rgba(174, 178, 243, 0.8);
+  position: absolute;
+  width: 512px;
+  left: calc(50% - 632px / 2 - 456px);
+  top: 476px;
+  bottom: -320px;
+  filter: blur(176px);
   z-index: 0;
 }
 
@@ -21,7 +33,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 48px 132px;
+  padding: 24px 132px;
   z-index: 1;
 }
 
@@ -62,7 +74,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: calc(100vh - 111px);
+  min-height: calc(100vh - 92px);
 }
 
 .hero {
@@ -86,20 +98,20 @@
 .description {
   margin-top: 4px;
   margin-bottom: 24px;
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 800;
+  line-height: 56px;
   text-align: center;
-  max-width: 700px;
-  line-height: 68px;
+  max-width: 650px;
   color: #010101;
 }
 
 .subdescription {
   font-size: 20px;
+  line-height: 28px;
   font-family: "Avenir";
   text-align: center;
-  max-width: 700px;
-  line-height: 28px;
+  max-width: 650px;
 }
 
 .subdescription a {
@@ -128,6 +140,7 @@
   background-color: #272727;
   color: #ffffff;
   padding: 96px 124px;
+  z-index: 1;
 }
 
 .footer button {
@@ -217,8 +230,14 @@
     min-height: calc(100vh - 82px);
   }
   .description {
+    width: 290px;
     font-size: 32px;
     line-height: 42px;
+  }
+  .subdescription {
+    width: 290px;
+    font-size: 14px;
+    line-height: 19px;
   }
   .footer {
     flex-direction: column;
@@ -226,7 +245,7 @@
     padding: 56px 24px;
   }
   .sendmail {
-    margin-right: auto;
+    margin-right: 0px;
   }
   .connect {
     margin-top: 124px;
