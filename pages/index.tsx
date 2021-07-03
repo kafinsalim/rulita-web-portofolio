@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Email from "../component/Email";
+import Email from "../component/svg/Email";
+import Menubar from "../component/svg/Menubar";
 import Section from "../component/Section";
 
 export default function Home() {
@@ -19,12 +20,13 @@ export default function Home() {
       <nav className={styles.nav}>
         <div>
           <Email className={styles.email} />
-          hitmeup.rulita@gmail.com
+          <span className={styles.hideInMobile}>hitmeup.rulita@gmail.com</span>
         </div>
-        <div>
+        <div className={styles.hideInMobile}>
           <button>Work</button>
           <button className={styles.resume}>Resume</button>
         </div>
+        <Menubar className={styles.showInMobile} />
       </nav>
 
       <main className={styles.main}>
