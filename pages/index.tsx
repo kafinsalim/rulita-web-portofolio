@@ -17,6 +17,7 @@ export default function Home() {
         <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
         <link rel="icon" href="/favicon.png" type="image/x-icon" />
       </Head>
+      <div className={styles.yellowGradient} />
       <nav className={styles.nav}>
         <div>
           <Email className={styles.email} />
@@ -79,11 +80,11 @@ export default function Home() {
           <p>Connect</p>
           <hr />
           <div className={styles.account}>
-            <a href="#">Linkedin</a>
-            <a href="#">Medium</a>
-            <a href="#">Instagram</a>
-            <a href="#">Dribble</a>
-            <a href="#">Behance</a>
+            <a href="https://linkedin.com/in/rulitash">Linkedin</a>
+            <a href="https://medium.com/@rulitaaa">Medium</a>
+            <a href="https://www.instagram.com/rulitash/">Instagram</a>
+            <a href="https://dribbble.com/rulitash">Dribble</a>
+            <a href="https://www.behance.net/rulitasani">Behance</a>
           </div>
         </div>
       </footer>

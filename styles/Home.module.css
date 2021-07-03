@@ -6,11 +6,23 @@
   overflow-x: hidden;
 }
 
+.yellowGradient {
+  background: #fdf1d6;
+  position: absolute;
+  width: 512px;
+  left: calc(50% - 512px / 2 + 199px);
+  top: -947px;
+  bottom: 423px;
+  filter: blur(170px);
+  z-index: 0;
+}
+
 .nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 40px 100px;
+  padding: 48px 132px;
+  z-index: 1;
 }
 
 .nav button {
@@ -40,6 +52,7 @@
 
 .main {
   width: 100%;
+  z-index: 1;
 }
 
 .header {
@@ -134,7 +147,7 @@
     rgba(254, 211, 241, 1) 50%,
     rgba(174, 178, 243, 1) 100%
   );
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 0px;
   margin-bottom: 24px;
@@ -187,6 +200,13 @@
   .showInMobile {
     display: block !important;
   }
+  .yellowGradient {
+    /* display: none; */
+    width: 276px;
+    left: calc(50% - 276px / 2 + 56px);
+    bottom: 396px;
+    filter: blur(96px);
+  }
   .nav {
     padding: 32px 24px;
   }
@@ -202,6 +222,9 @@
     flex-direction: column;
     text-align: center;
     padding: 56px 24px;
+  }
+  .sendmail {
+    margin-right: auto;
   }
   .connect {
     margin-top: 124px;
