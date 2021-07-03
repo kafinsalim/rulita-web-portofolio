@@ -41,7 +41,8 @@ export default function Home() {
             design.
           </p>
           <small className={styles.subdescription}>
-            Over 4 years experience in a fast pace company as a visual designer.
+            Over {new Date().getFullYear() - 2017} years experience in a fast
+            pace company as a visual designer.
             <br />
             Currently working at <a href="https://pintu.co.id">Pintu.</a>
           </small>

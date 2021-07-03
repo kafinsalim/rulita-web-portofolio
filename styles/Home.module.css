@@ -26,10 +26,12 @@
 }
 
 .nav button {
+  font-family: "Avenir";
+  font-size: 20px;
+  font-weight: 800;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-weight: 800;
   box-sizing: border-box;
   margin-right: 24px;
 }
@@ -45,7 +47,7 @@
 
 .nav .resume {
   background: #5459ab;
-  border-radius: 18px;
+  border-radius: 24px;
   color: #ffffff;
   padding: 8px 24px;
 }
@@ -178,7 +180,11 @@
   padding-top: 24px;
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 24px;
+  grid-gap: 12px;
+}
+
+.account a {
+  padding: 12px 0px;
 }
 
 /* responsive (mobile) */

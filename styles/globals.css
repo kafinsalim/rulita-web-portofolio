@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800");
-@import url("https://fonts.googleapis.com/css?family=Avenir");
+@import url("https://fonts.googleapis.com/css?family=Avenir:400,800");
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   background: rgb(208, 228, 254);
   background: linear-gradient(
     137deg,
@@ -22,6 +22,7 @@ a {
 
 button {
   font-family: "Open Sans";
+  min-height: 44px;
 }
 
 * {
