@@ -1,14 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Avenir");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Open Sans";
+  background: rgb(208, 228, 254);
+  background: linear-gradient(
+    137deg,
+    rgba(208, 228, 254, 1) 0%,
+    rgba(254, 211, 241, 1) 50%,
+    rgba(174, 178, 243, 1) 100%
+  );
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button {
+  font-family: "Open Sans";
 }
 
 * {
